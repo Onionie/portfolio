@@ -21,7 +21,9 @@ const Nav = () => {
             <a href="https://www.linkedin.com/in/onionie/">LinkedIn Logo</a>
           </li>
           <li>
-            <a href="#contact">Contact Me</a>
+            <a className="contact" href="#contact">
+              Contact Me
+            </a>
           </li>
         </ul>
       </nav>

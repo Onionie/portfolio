@@ -20,7 +20,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  padding: 2rem 4rem 0;
+  padding: 5rem 4rem 0;
 }
 
 nav {
@@ -30,13 +30,34 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   list-style: none;
   font-size: 2.6rem;
 }
 
-nav a:link {
+nav a,
+.contact {
+  transition: all 0.3s;
+}
+
+nav a:link,
+nav a:visited {
   text-decoration: none;
+  font-weight: 500;
+  color: #eee;
+}
+
+nav a:hover {
+  color: rgb(245, 61, 33);
+}
+
+.contact {
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+}
+
+.contact:hover {
+  border: 2px solid rgb(245, 61, 33);
 }
 
 .hero {
