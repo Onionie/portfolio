@@ -1,7 +1,13 @@
 import Header from './Components/Header';
+import Hero from './Components/Hero';
 
 function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 }
 
 export default App;

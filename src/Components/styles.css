@@ -18,6 +18,8 @@ body {
 }
 
 header {
+  position: absolute;
+  width: 100%;
   padding: 2rem 4rem 0;
 }
 
@@ -35,4 +37,13 @@ nav ul {
 
 nav a:link {
   text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../public/images/blood-moon.jpg');
+  background-position: right 65% bottom 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
