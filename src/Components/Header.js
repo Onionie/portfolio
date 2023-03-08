@@ -4,12 +4,27 @@ import './styles.css';
 const Nav = () => {
   return (
     <header>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="https://github.com/Onionie?tab=repositories">Github Logo</a>
-      <a href="https://www.linkedin.com/in/onionie/">LinkedIn Logo</a>
-      <a href="#contact">Contact Me</a>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="https://github.com/Onionie?tab=repositories">
+              Github Logo
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/onionie/">LinkedIn Logo</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
