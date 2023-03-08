@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #eee;
 }
 
 header {
@@ -61,10 +62,52 @@ nav a:hover {
 }
 
 .hero {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: url('../../public/images/blood-moon.jpg');
-  background-position: right 65% bottom 55%;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero__textbox {
+  position: relative;
+  top: 30%;
+  width: 40%;
+  margin-left: 10rem;
+}
+
+.hero__textbox__title__container {
+  display: inline-block;
+}
+
+.hero__textbox__title {
+  width: 100%;
+  font-size: 6.2rem;
+  font-weight: 900;
+  border-right: 5px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: typing 2s steps(27), cursor 0.4s step-end infinite alternate;
+}
+
+.hero__textbox__body {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* Animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
