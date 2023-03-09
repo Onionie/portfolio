@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 import './styles.css';
 
 const Nav = () => {
@@ -14,11 +16,13 @@ const Nav = () => {
           </li>
           <li>
             <a href="https://github.com/Onionie?tab=repositories">
-              Github Logo
+              <BsGithub />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/onionie/">LinkedIn Logo</a>
+            <a href="https://www.linkedin.com/in/onionie/">
+              <BsLinkedin />
+            </a>
           </li>
           <li>
             <a className="contact" href="#contact">

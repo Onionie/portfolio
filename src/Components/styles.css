@@ -32,8 +32,15 @@ nav {
 nav ul {
   display: flex;
   gap: 5rem;
+  align-items: center;
   list-style: none;
   font-size: 2.6rem;
+}
+
+li a svg {
+  display: block;
+  width: 4rem;
+  height: 4rem;
 }
 
 nav a,
@@ -62,7 +69,7 @@ nav a:hover {
 }
 
 .hero {
-  height: 120vh;
+  height: 110vh;
   width: 100%;
   background-image: url('../../public/images/blood-moon.jpg');
   background-position: right;
@@ -98,6 +105,15 @@ nav a:hover {
   line-height: 1.5;
   color: #ddd;
 }
+
+/* Test -- remove after with the div */
+/* .hero__text_height {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(254, 73, 73, 0.2);
+} */
 
 /* Animations */
 @keyframes typing {

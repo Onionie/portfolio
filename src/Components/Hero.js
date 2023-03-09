@@ -4,6 +4,7 @@ import './styles.css';
 const Hero = () => {
   return (
     <section className="hero">
+      <div className="hero__text_height"></div>
       <div className="hero__textbox">
         <div className="hero__textbox__title__container">
           <div className="hero__textbox__title">
