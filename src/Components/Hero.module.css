@@ -1,73 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #eee;
-}
-
-header {
-  position: absolute;
-  width: 100%;
-  padding: 5rem 4rem 0;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
-  display: flex;
-  gap: 5rem;
-  align-items: center;
-  list-style: none;
-  font-size: 2.6rem;
-}
-
-li a svg {
-  display: block;
-  width: 4rem;
-  height: 4rem;
-}
-
-nav a,
-.contact {
-  transition: all 0.3s;
-}
-
-nav a:link,
-nav a:visited {
-  text-decoration: none;
-  font-weight: 500;
-  color: #eee;
-}
-
-nav a:hover {
-  color: rgb(245, 61, 33);
-}
-
-.contact {
-  border: 2px solid #fff;
-  padding: 1rem 2rem;
-}
-
-.contact:hover {
-  border: 2px solid rgb(245, 61, 33);
-}
-
 .hero {
   height: 110vh;
   width: 100%;
@@ -123,29 +53,29 @@ nav a:hover {
   transition: all 0.3s;
 }
 
-.btn--full {
+.btn__full {
   background-color: #dc5f00;
   margin-right: 2rem;
 }
 
-.btn--full:hover {
+.btn__full:hover {
   background-color: #ff5b00;
 }
 
-.btn--full:active {
+.btn__full:active {
   background-color: #9a2e00;
 }
 
-.btn--outline {
+.btn__outline {
   border: 2px solid #ffee63;
 }
 
-.btn--outline:hover {
+.btn__outline:hover {
   background-color: #ffee63;
   color: #000;
 }
 
-.btn--outline:active {
+.btn__outline:active {
   background-color: #b3a745;
   border-color: #b3a745;
 }

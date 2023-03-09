@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
-import './styles.css';
+import styles from './Header.module.css';
 
 const Nav = () => {
   return (
@@ -25,7 +25,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a className="contact" href="#contact">
+            <a className={styles.contact} href="#contact">
               Contact Me
             </a>
           </li>
