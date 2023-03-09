@@ -18,6 +18,15 @@ const Hero = () => {
           Although I love front-end development, I also like to work with
           back-end technologies such as Node.Js, Express.js and MongoDB.
         </p>
+        <a className="btn btn--full" href="#">
+          My Resume
+        </a>
+        <a
+          className="btn btn--outline"
+          href="https://github.com/Onionie?tab=repositories"
+        >
+          My Repositories
+        </a>
       </div>
     </section>
   );

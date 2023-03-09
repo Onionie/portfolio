@@ -15,7 +15,7 @@ const Nav = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="https://github.com/Onionie?tab=repositories">
+            <a href="https://github.com/Onionie">
               <BsGithub />
             </a>
           </li>
