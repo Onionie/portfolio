@@ -42,4 +42,13 @@
   margin-top: 1rem;
   padding: 1rem 1.5rem;
   border-radius: 0.6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.skills_logo_box li svg {
+  display: block;
+  margin-right: 1.2rem;
+  font-size: 4rem;
 }

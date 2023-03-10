@@ -1,26 +1,62 @@
 import React from 'react';
+import {
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoJavascript,
+  IoLogoNodejs,
+} from 'react-icons/io';
+import { FaReact } from 'react-icons/fa';
+import { BsBootstrapFill, BsGit } from 'react-icons/bs';
+import { SiExpress, SiMongodb } from 'react-icons/si';
 import styles from './Skills.module.css';
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       <div className={styles.skills__box}>
         <h1>Skills</h1>
         <div className={styles.skills_logo_box}>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+            <li>
+              <IoLogoHtml5 />
+              HTML
+            </li>
+            <li>
+              <IoLogoCss3 />
+              CSS
+            </li>
+            <li>
+              <IoLogoJavascript />
+              Javascript
+            </li>
           </ul>
           <ul>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>Git</li>
+            <li>
+              <FaReact />
+              React
+            </li>
+            <li>
+              <BsBootstrapFill />
+              Bootstrap
+            </li>
+            <li>
+              <BsGit />
+              Git
+            </li>
           </ul>
           <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
+            <li>
+              <IoLogoNodejs />
+              Node.js
+            </li>
+            <li>
+              <SiExpress />
+              Express.js
+            </li>
+            <li>
+              <SiMongodb />
+              MongoDB
+            </li>
           </ul>
         </div>
       </div>
