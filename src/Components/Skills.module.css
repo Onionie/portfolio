@@ -52,3 +52,35 @@
   margin-right: 1.2rem;
   font-size: 4rem;
 }
+
+.html svg {
+  color: #f06529;
+}
+
+.css svg {
+  color: #2965f1;
+}
+
+.javascript svg {
+  color: #f0db4f;
+}
+
+.react svg {
+  color: #61dbfb;
+}
+
+.bootstrap svg {
+  color: #563d7c;
+}
+
+.git svg {
+  color: #f1502f;
+}
+
+.node svg {
+  color: #68a063;
+}
+
+.mongo svg {
+  color: #4db33d;
+}

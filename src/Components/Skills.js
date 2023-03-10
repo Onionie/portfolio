@@ -17,35 +17,35 @@ const Skills = () => {
         <h1>Skills</h1>
         <div className={styles.skills_logo_box}>
           <ul>
-            <li>
+            <li className={styles.html}>
               <IoLogoHtml5 />
               HTML
             </li>
-            <li>
+            <li className={styles.css}>
               <IoLogoCss3 />
               CSS
             </li>
-            <li>
+            <li className={styles.javascript}>
               <IoLogoJavascript />
               Javascript
             </li>
           </ul>
           <ul>
-            <li>
+            <li className={styles.react}>
               <FaReact />
               React
             </li>
-            <li>
+            <li className={styles.bootstrap}>
               <BsBootstrapFill />
               Bootstrap
             </li>
-            <li>
+            <li className={styles.git}>
               <BsGit />
               Git
             </li>
           </ul>
           <ul>
-            <li>
+            <li className={styles.node}>
               <IoLogoNodejs />
               Node.js
             </li>
@@ -53,7 +53,7 @@ const Skills = () => {
               <SiExpress />
               Express.js
             </li>
-            <li>
+            <li className={styles.mongo}>
               <SiMongodb />
               MongoDB
             </li>
