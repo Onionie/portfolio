@@ -9,3 +9,40 @@
   font-size: 5.4rem;
   font-weight: 900;
 }
+
+.projects__tabs {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  background-color: #2f2e2e;
+  margin: 3rem auto 5rem;
+  border: 2px solid #7b7b7b;
+  border-radius: 500px;
+  overflow: hidden;
+}
+
+.projects__tabs li {
+  padding: 1rem 1.5rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects__tabs li:first-child {
+  border-right: 2px solid #7b7b7b;
+}
+
+.projects__tabs li:last-child {
+  border-left: 2px solid #7b7b7b;
+}
+
+.tab__active {
+  background: rgb(221, 51, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 86, 11, 1) 45%,
+    rgba(237, 45, 45, 1) 65%
+  );
+}
