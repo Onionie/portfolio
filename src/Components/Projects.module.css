@@ -1,0 +1,11 @@
+.projects {
+  height: 1000px;
+  background-color: #000000;
+  padding: 10rem 15rem;
+}
+
+.projects__title {
+  text-align: center;
+  font-size: 5.4rem;
+  font-weight: 900;
+}
