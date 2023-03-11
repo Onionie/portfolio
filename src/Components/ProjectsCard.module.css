@@ -1,0 +1,92 @@
+.container {
+  min-height: 400px;
+  width: 100%;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(255, 86, 11, 0.8);
+
+  display: grid;
+  grid-template-columns: 6.5fr 3.5fr;
+  padding: 2rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.container__image {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.container__image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.container__body__title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.container__body p {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.container__body__desc {
+  line-height: 1.4;
+}
+
+.tools {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+.btn__box {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  color: #eee;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.btn__full {
+  background-color: #dc5f00;
+  margin-right: 2rem;
+}
+
+.btn__full:hover {
+  background-color: #ff5b00;
+}
+
+.btn__full:active {
+  background-color: #9a2e00;
+}
+
+.btn__outline {
+  border: 2px solid #ffee63;
+}
+
+.btn__outline:hover {
+  background-color: #ffee63;
+  color: #000;
+}
+
+.btn__outline:active {
+  background-color: #b3a745;
+  border-color: #b3a745;
+}

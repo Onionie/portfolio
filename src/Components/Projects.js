@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProjectsCard from './ProjectsCard';
 import styles from './Projects.module.css';
 
 const Projects = () => {
@@ -44,6 +45,7 @@ const Projects = () => {
           Weather App
         </li>
       </ul>
+      <ProjectsCard />
     </section>
   );
 };
