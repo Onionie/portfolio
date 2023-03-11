@@ -53,7 +53,7 @@
   text-decoration: none;
   font-size: 2.2rem;
   font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 9px;
   color: #eee;
   cursor: pointer;
@@ -64,7 +64,7 @@
 
 .btn__full {
   background-color: #dc5f00;
-  margin-right: 1.6rem;
+  margin-right: 1rem;
 }
 
 .btn__full:hover {

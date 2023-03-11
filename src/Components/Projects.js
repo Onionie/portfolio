@@ -3,7 +3,9 @@ import ProjectsCard from './ProjectsCard';
 import styles from './Projects.module.css';
 
 // images
-import efit from '../Assets/images/1.PNG';
+import eFitImg from '../Assets/images/1.PNG';
+import palawanImg from '../Assets/images/2.PNG';
+import weatherImg from '../Assets/images/3.PNG';
 
 const Projects = () => {
   const [eFit, setEFit] = useState(true);
@@ -28,6 +30,44 @@ const Projects = () => {
     setWeatherApp(true);
   };
 
+  const renderProject = () => {
+    if (eFit) {
+      return (
+        <ProjectsCard
+          imgSrc={eFitImg}
+          imgAlt="A screenshot of eFitness website"
+          title="eFitness"
+          desc="A single-page (SPA) e-Commerce website about Fitness products that lets user access different pages, such as Accessories, Equipments and Supplements. This web application gives the users the ability to add items to their cart. And also use PayPal API for the transaction. This application is built with MongoDB, Express, React, and Node (MERN stack)."
+          tools="HTML, CSS, Javascript, MongoDB, Express, React, React-Redux, React-Bootstrap, Node.js, and PayPal API"
+        />
+      );
+    }
+    if (palawan) {
+      return (
+        <ProjectsCard
+          imgSrc={palawanImg}
+          imgAlt="A screenshot of palawan website"
+          title="Palawan"
+          desc="A landing Web page for people that are interested in traveling to Palawan Island in The Philippines. This web page shows users high quality images that highlight the beauty of Palawan."
+          tools="HTML, Vanilla CSS, Javascript"
+        />
+      );
+    }
+    if (weatherApp) {
+      return (
+        <ProjectsCard
+          imgSrc={weatherImg}
+          imgAlt="A screenshot of weather app website"
+          title="WeatherApp"
+          desc="A simple weather application that can retrieve data from OpenWeatherMap API using Node.js. Users can look up a city or a zip code and this Weather Application will fetch data from the back-end and translate it to front-end."
+          tools="HTML, CSS, Javascript, Node.js, Express.js, EJS, OpenWeatherMap API
+
+"
+        />
+      );
+    }
+  };
+
   return (
     <section id="projects" className={styles.projects}>
       <h1 className={styles.projects__title}>Projects</h1>
@@ -48,13 +88,7 @@ const Projects = () => {
           Weather App
         </li>
       </ul>
-      <ProjectsCard
-        imgSrc={efit}
-        imgAlt="A screenshot of eFitness website"
-        title="eFitness"
-        desc="A single-page (SPA) e-Commerce website about Fitness products that lets user access different pages, such as Accessories, Equipments and Supplements. This web application gives the users the ability to add items to their cart. And also use PayPal API for the transaction. This application is built with MongoDB, Express, React, and Node (MERN stack)."
-        tools="HTML, CSS, Javascript, MongoDB, Express, React, React-Redux, React-Bootstrap, Node.js, and PayPal API"
-      />
+      {renderProject()}
     </section>
   );
 };
