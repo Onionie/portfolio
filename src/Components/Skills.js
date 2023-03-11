@@ -15,7 +15,11 @@ const Skills = () => {
     <section id="skills" className={styles.skills}>
       <div className={styles.skills__box}>
         <h1>Skills</h1>
-        <div className={styles.skills_logo_box}>
+        <div
+          className={styles.skills_logo_box}
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <ul>
             <li className={styles.html}>
               <IoLogoHtml5 />
