@@ -1,0 +1,20 @@
+.contact {
+  position: relative;
+  background-color: bisque;
+  border-top: 1px solid salmon;
+  padding: 5rem 20rem;
+
+  min-height: 600px;
+  background-image: url('../Assets/images/moon.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__container {
+  background-color: white;
+  position: absolute;
+  right: 20rem;
+  height: 500px;
+  width: 40%;
+}
