@@ -39,6 +39,8 @@ const Projects = () => {
           title="eFitness"
           desc="A single-page (SPA) e-Commerce website about Fitness products that lets user access different pages, such as Accessories, Equipments and Supplements. This web application gives the users the ability to add items to their cart. And also use PayPal API for the transaction. This application is built with MongoDB, Express, React, and Node (MERN stack)."
           tools="HTML, CSS, Javascript, MongoDB, Express, React, React-Redux, React-Bootstrap, Node.js, and PayPal API"
+          liveLink="https://efitness.onrender.com/"
+          codeLink="https://github.com/Onionie/eFitness"
         />
       );
     }
@@ -50,6 +52,8 @@ const Projects = () => {
           title="Palawan"
           desc="A landing Web page for people that are interested in traveling to Palawan Island in The Philippines. This web page shows users high quality images that highlight the beauty of Palawan."
           tools="HTML, Vanilla CSS, Javascript"
+          liveLink="https://onielg-palawan.netlify.app/"
+          codeLink="https://github.com/Onionie/Palawan"
         />
       );
     }
@@ -60,9 +64,9 @@ const Projects = () => {
           imgAlt="A screenshot of weather app website"
           title="WeatherApp"
           desc="A simple weather application that can retrieve data from OpenWeatherMap API using Node.js. Users can look up a city or a zip code and this Weather Application will fetch data from the back-end and translate it to front-end."
-          tools="HTML, CSS, Javascript, Node.js, Express.js, EJS, OpenWeatherMap API
-
-"
+          tools="HTML, CSS, Javascript, Node.js, Express.js, EJS, OpenWeatherMap API"
+          liveLink="https://onielg-weather-app.onrender.com/"
+          codeLink="https://github.com/Onionie/WeatherApp"
         />
       );
     }

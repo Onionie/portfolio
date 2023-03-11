@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './ProjectsCard.module.css';
 
-const ProjectsCard = ({ imgSrc, imgAlt, title, desc, tools }) => {
+const ProjectsCard = ({
+  imgSrc,
+  imgAlt,
+  title,
+  desc,
+  tools,
+  liveLink,
+  codeLink,
+}) => {
   return (
     <div className={styles.container}>
       <div
@@ -36,13 +44,10 @@ const ProjectsCard = ({ imgSrc, imgAlt, title, desc, tools }) => {
           data-aos="fade-left"
           data-aos-delay="1800"
         >
-          <a className={`${styles.btn} ${styles.btn__full}`} href="#">
+          <a className={`${styles.btn} ${styles.btn__full}`} href={liveLink}>
             Live
           </a>
-          <a
-            className={`${styles.btn} ${styles.btn__outline}`}
-            href="https://github.com/Onionie?tab=repositories"
-          >
+          <a className={`${styles.btn} ${styles.btn__outline}`} href={codeLink}>
             Code
           </a>
         </div>
