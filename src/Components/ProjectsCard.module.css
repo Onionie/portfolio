@@ -9,7 +9,6 @@
   grid-template-columns: 6.5fr 3.5fr;
   padding: 2rem;
   gap: 2rem;
-  position: relative;
 }
 
 .container__image {
@@ -43,9 +42,8 @@
 }
 
 .btn__box {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn,
@@ -66,7 +64,7 @@
 
 .btn__full {
   background-color: #dc5f00;
-  margin-right: 2rem;
+  margin-right: 1.6rem;
 }
 
 .btn__full:hover {
