@@ -12,8 +12,8 @@ import styles from './Skills.module.css';
 
 const Skills = () => {
   return (
-    <section id="skills" className={styles.skills}>
-      <div className={styles.skills__box}>
+    <section className={styles.skills}>
+      <div id="skills" className={styles.skills__box}>
         <h1>Skills</h1>
         <div
           className={styles.skills_logo_box}
