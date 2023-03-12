@@ -1,10 +1,8 @@
 .contact {
-  position: relative;
-  background-color: bisque;
-  border-top: 1px solid salmon;
-  padding: 5rem 20rem;
-
   min-height: 600px;
+  position: relative;
+  padding: 5rem 0;
+
   background-image: url('../Assets/images/moon.PNG');
   background-position: center;
   background-size: cover;
@@ -12,9 +10,89 @@
 }
 
 .form__container {
-  background-color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(198, 199, 255, 1) 1%,
+    rgba(0, 171, 212, 1) 12%,
+    rgba(0, 59, 159, 1) 40%,
+    rgba(1, 28, 75, 1) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   position: absolute;
-  right: 20rem;
+  left: 50%;
+  transform: translateX(-8%);
   height: 500px;
-  width: 40%;
+  padding: 2rem 3rem;
+  border-radius: 0.8rem;
+}
+
+.form__container,
+.name__box div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container label {
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-top: 1rem;
+}
+
+.form__container input,
+.form__container textarea {
+  font-size: 2.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid black;
+}
+
+.form__container textarea {
+  resize: none;
+  height: 90%;
+}
+
+.name__box {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+}
+
+.btn__send {
+  display: flex;
+  align-items: center;
+  background-color: #dc5f00;
+  margin: 1rem auto 0 auto;
+  padding: 1.2rem 4rem;
+  cursor: pointer;
+  border-radius: 500px;
+  transition: all 0.4s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.btn__send:hover {
+  background-color: #ff5b00;
+}
+
+.btn__send:active {
+  background-color: #bd3e08;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn__send svg {
+  font-size: 2.2rem;
+}
+
+input.send {
+  background-color: transparent;
+  border: none;
+  cursor: inherit;
+  color: #eee;
+}
+
+/* Popup Modal */
+.modal {
+  background-color: red;
+  font-size: 2.6rem;
+  padding: 1rem 1.5rem;
 }
