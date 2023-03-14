@@ -33,35 +33,42 @@ const Contact = () => {
 
   return (
     <section id="contact" className={styles.contact}>
-      <form className={styles.form__container} ref={form} onSubmit={sendEmail}>
-        <div className={styles.name__box}>
-          <div>
-            <label>First Name</label>
-            <input type="text" name="user_fname" placeholder="John" required />
+      {/* Create state modal: disabled={state? true : false */}
+      <fieldset disabled={false}>
+        <form
+          className={styles.form__container}
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <h1>Send me a message</h1>
+          <div className={styles.name__box}>
+            <input
+              type="text"
+              name="user_fname"
+              placeholder="First Name"
+              required
+            />
+
+            <input
+              type="text"
+              name="user_lname"
+              placeholder="Last Name"
+              required
+            />
           </div>
-          <div>
-            <label>Last Name</label>
-            <input type="text" name="user_lname" placeholder="Doe" required />
+          <input type="email" name="user_email" placeholder="Email" required />
+          <textarea
+            name="message"
+            placeholder="Type your message in here"
+            required
+          />
+          <div className={styles.btn__send}>
+            <BsFillSendFill />
+            <input className={styles.send} type="submit" value="Send" />
           </div>
-        </div>
-        <label>Email</label>
-        <input
-          type="email"
-          name="user_email"
-          placeholder="johndoe@email.com"
-          required
-        />
-        <label>Message</label>
-        <textarea
-          name="message"
-          placeholder="Type your message in here"
-          required
-        />
-        <div className={styles.btn__send}>
-          <BsFillSendFill />
-          <input className={styles.send} type="submit" value="Send" />
-        </div>
-      </form>
+        </form>
+      </fieldset>
+
       {showModal ? <div className={styles.modal}>Message is sent!</div> : ''}
     </section>
   );

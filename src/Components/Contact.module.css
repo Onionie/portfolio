@@ -1,50 +1,64 @@
 .contact {
   min-height: 600px;
   position: relative;
-  padding: 5rem 0;
+  padding: 5rem 30rem;
+  background-color: black;
+}
 
-  background-image: url('../Assets/images/moon.PNG');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+fieldset {
+  border: 0;
 }
 
 .form__container {
-  background: linear-gradient(
-    0deg,
-    rgba(198, 199, 255, 1) 1%,
-    rgba(0, 171, 212, 1) 12%,
-    rgba(0, 59, 159, 1) 40%,
-    rgba(1, 28, 75, 1) 65%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
-  position: absolute;
-  left: 50%;
-  transform: translateX(-8%);
-  height: 500px;
-  padding: 2rem 3rem;
-  border-radius: 0.8rem;
+  background-image: url('../Assets/images/moon-phase.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  padding: 2rem 20rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
 }
 
-.form__container,
-.name__box div {
+.form__container h1 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form__container {
   display: flex;
   flex-direction: column;
-}
-
-.form__container label {
-  font-weight: 700;
-  font-size: 2.6rem;
-  margin-top: 1rem;
+  gap: 3rem;
 }
 
 .form__container input,
 .form__container textarea {
   font-size: 2.2rem;
   padding: 0.4rem 0.8rem;
-  border-radius: 0.6rem;
-  border: 1px solid black;
+  border: 0;
+  border-bottom: 2px solid grey;
+  background-color: transparent;
+  outline: none;
+  color: #eee;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  border-bottom: 2px solid grey;
+  font-size: 2.2rem;
+  -webkit-text-fill-color: #eee;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form__container textarea {
@@ -54,7 +68,7 @@
 
 .name__box {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
 }
 
@@ -67,7 +81,7 @@
   cursor: pointer;
   border-radius: 500px;
   transition: all 0.4s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
 }
 
 .btn__send:hover {
@@ -76,7 +90,7 @@
 
 .btn__send:active {
   background-color: #bd3e08;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
 }
 
 .btn__send svg {
