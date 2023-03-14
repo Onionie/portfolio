@@ -3,9 +3,9 @@ import ProjectsCard from './ProjectsCard';
 import styles from './Projects.module.css';
 
 // images
-import eFitImg from '../Assets/images/1.PNG';
-import palawanImg from '../Assets/images/2.PNG';
-import weatherImg from '../Assets/images/3.PNG';
+import eFitImg from '../Assets/images/1.jpg';
+import palawanImg from '../Assets/images/2.jpg';
+import weatherImg from '../Assets/images/3.jpg';
 
 const Projects = () => {
   const [eFit, setEFit] = useState(true);
