@@ -33,8 +33,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className={styles.contact}>
-      {/* Create state modal: disabled={state? true : false */}
-      <fieldset disabled={false}>
+      <fieldset disabled={showModal ? true : false}>
         <form
           className={styles.form__container}
           ref={form}
@@ -56,7 +55,8 @@ const Contact = () => {
               required
             />
           </div>
-          <input type="email" name="user_email" placeholder="Email" required />
+          {/*input email attr: required -- disabled for testing modal*/}
+          <input type="email" name="user_email" placeholder="Email" />
           <textarea
             name="message"
             placeholder="Type your message in here"
