@@ -97,6 +97,11 @@ select:-webkit-autofill:focus {
   font-size: 2.2rem;
 }
 
+.btn__disable {
+  pointer-events: none;
+  background-color: grey;
+}
+
 input.send {
   background-color: transparent;
   border: none;
@@ -105,8 +110,53 @@ input.send {
 }
 
 /* Popup Modal */
+.contact fieldset {
+  position: relative;
+}
+
 .modal {
-  background-color: red;
+  position: absolute;
+  width: 45rem;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: linear-gradient(
+    32deg,
+    rgba(62, 81, 81, 1) 34%,
+    rgba(84, 107, 107, 1) 80%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.8rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
   font-size: 2.6rem;
   padding: 1rem 1.5rem;
+}
+
+.modal h2 {
+  margin-bottom: 3rem;
+}
+
+.modal h6 {
+  color: #ddd;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.close_btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.close_btn:hover {
+  transform: scale(1.1);
+  color: #fc8021;
 }
