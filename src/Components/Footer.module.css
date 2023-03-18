@@ -1,0 +1,44 @@
+footer {
+  min-height: 8rem;
+  max-width: 100%;
+  background-color: black;
+  font-size: 4rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+footer li svg,
+.copy a:link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+footer li svg:hover,
+.copy a:hover {
+  color: rgb(245, 61, 33);
+}
+
+footer li a:link,
+footer li a:visited,
+.copy a:visited {
+  color: white;
+}
+
+.copy {
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  color: #ddd;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.copy a:hover {
+  color: rgb(245, 61, 33);
+}
