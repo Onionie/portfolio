@@ -68,3 +68,73 @@ nav a:hover {
 .contact:hover {
   border: 2px solid rgb(245, 61, 33);
 }
+
+/* Media queries */
+
+/* screen > 2000px */
+@media (min-width: 125em) {
+  nav ul {
+    font-size: 3.8rem;
+  }
+
+  li a svg {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* screen > 2000px */
+@media (min-width: 125em) {
+  nav ul {
+    font-size: 3.8rem;
+  }
+
+  li a svg {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* screen < 1600px */
+@media (max-width: 100em) {
+  nav ul {
+    gap: 3rem;
+    font-size: 2.2rem;
+  }
+
+  li a svg {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* screen < 1600px */
+@media (max-width: 100em) {
+  nav ul {
+    gap: 3rem;
+    font-size: 2.2rem;
+  }
+
+  li a svg {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* screen < 1312px */
+@media (max-width: 82em) {
+  nav ul {
+    gap: 2rem;
+    font-size: 2.2rem;
+  }
+
+  li a svg {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+} ;
