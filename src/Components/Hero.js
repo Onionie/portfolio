@@ -9,8 +9,6 @@ const Hero = () => {
   });
   return (
     <section className={styles.hero}>
-      {/* Remove this after creating skills comp*/}
-      <div className={styles.hero__text_height}></div>
       <div className={styles.hero__textbox}>
         <div className={styles.hero__textbox__title__container}>
           <div className={styles.hero__textbox__title}>
