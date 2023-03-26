@@ -1,7 +1,7 @@
 .hero {
   height: 110vh;
   width: 100%;
-  background-image: url('../../public/images/blood-moon.jpg');
+  background-image: url('../Assets/images/blood-moon.jpg');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
