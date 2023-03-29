@@ -26,9 +26,12 @@ const Hero = () => {
           Although I love front-end development, I also like to work with
           back-end technologies such as Node.Js, Express.js and MongoDB.
         </p>
-        {/* Needs to fix href */}
         <div data-aos="fade-right" data-aos-delay="2100">
-          <a className={`${styles.btn} ${styles.btn__full}`} href="#">
+          <a
+            className={`${styles.btn} ${styles.btn__full}`}
+            href="https://drive.google.com/file/d/1VmbQ67KnbyMJx9_7zMzrJFzy360DHM9j/view"
+            target="_blank"
+          >
             My Resume
           </a>
           <a
