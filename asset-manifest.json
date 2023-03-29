@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ef85c4d8.css",
-    "main.js": "/portfolio/static/js/main.dd6b0f7a.js",
+    "main.css": "/portfolio/static/css/main.0707b9b9.css",
+    "main.js": "/portfolio/static/js/main.473a9cff.js",
     "static/media/2.jpg": "/portfolio/static/media/2.7d301ebabdb5d374493d.jpg",
     "static/media/1.jpg": "/portfolio/static/media/1.b15b3d71d466d4a7eac1.jpg",
     "static/media/3.jpg": "/portfolio/static/media/3.ab1dd3397b959ac3a8bc.jpg",
     "static/media/moon-phase.jpg": "/portfolio/static/media/moon-phase.c4e0414954ab4e17b428.jpg",
     "static/media/blood-moon.jpg": "/portfolio/static/media/blood-moon.48f6e75ffcc92adc943c.jpg",
     "index.html": "/portfolio/index.html",
-    "main.ef85c4d8.css.map": "/portfolio/static/css/main.ef85c4d8.css.map",
-    "main.dd6b0f7a.js.map": "/portfolio/static/js/main.dd6b0f7a.js.map"
+    "main.0707b9b9.css.map": "/portfolio/static/css/main.0707b9b9.css.map",
+    "main.473a9cff.js.map": "/portfolio/static/js/main.473a9cff.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef85c4d8.css",
-    "static/js/main.dd6b0f7a.js"
+    "static/css/main.0707b9b9.css",
+    "static/js/main.473a9cff.js"
   ]
 }
