@@ -31,6 +31,7 @@ const Hero = () => {
             className={`${styles.btn} ${styles.btn__full}`}
             href="https://drive.google.com/file/d/1VmbQ67KnbyMJx9_7zMzrJFzy360DHM9j/view"
             target="_blank"
+            rel="noreferrer"
           >
             My Resume
           </a>
