@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './Hero.module.css';
+import './Hero.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -8,15 +8,15 @@ const Hero = () => {
     Aos.init({ duration: 1500, once: true }, []);
   });
   return (
-    <section className={styles.hero__section}>
-      <div className={styles.hero__textbox}>
-        <div className={styles.hero__textbox__title__container}>
-          <div className={styles.hero__textbox__title}>
+    <section className="hero__section">
+      <div className="hero__textbox">
+        <div className="hero__textbox__title__container">
+          <div className="hero__textbox__title">
             Hello! I'm Oniel Gutierrez.
           </div>
         </div>
         <p
-          className={styles.hero__textbox__body}
+          className="hero__textbox__body"
           data-aos="fade-right"
           data-aos-delay="1900"
         >
@@ -28,7 +28,7 @@ const Hero = () => {
         </p>
         <div data-aos="fade-right" data-aos-delay="2100">
           <a
-            className={`${styles.btn} ${styles.btn__full}`}
+            className="btn btn__full"
             href="https://drive.google.com/file/d/1VmbQ67KnbyMJx9_7zMzrJFzy360DHM9j/view"
             target="_blank"
             rel="noreferrer"
@@ -36,7 +36,7 @@ const Hero = () => {
             My Resume
           </a>
           <a
-            className={`${styles.btn} ${styles.btn__outline}`}
+            className="btn btn__outline"
             href="https://github.com/Onionie?tab=repositories"
           >
             My Repositories
