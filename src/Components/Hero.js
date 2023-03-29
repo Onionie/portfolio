@@ -8,7 +8,7 @@ const Hero = () => {
     Aos.init({ duration: 1500, once: true }, []);
   });
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero__section}>
       <div className={styles.hero__textbox}>
         <div className={styles.hero__textbox__title__container}>
           <div className={styles.hero__textbox__title}>
