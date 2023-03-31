@@ -1,4 +1,5 @@
 .skills {
+  margin-top: 10rem;
   background: rgb(221, 51, 51);
   background: linear-gradient(
     340deg,
@@ -6,7 +7,7 @@
     rgba(204, 68, 34, 1) 12%,
     rgba(0, 0, 0, 1) 35%
   );
-  min-height: 500px;
+  min-height: 50rem;
 }
 
 .skills__box {
@@ -128,5 +129,154 @@
 
   .skills_logo_box li svg {
     font-size: 6.5rem;
+  }
+}
+
+/* screen < 1320px */
+@media (max-width: 82.5em) {
+  .skills__box {
+    height: 35rem;
+    width: 65%;
+    padding-top: 3rem;
+  }
+  .skills__box h1 {
+    font-size: 4.2rem;
+  }
+
+  .skills_logo_box {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    gap: 5rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 3.5rem;
+  }
+}
+
+/* screen < 960px */
+@media (max-width: 60em) {
+  .skills {
+    min-height: 45rem;
+  }
+
+  .skills__box {
+    width: 70%;
+  }
+}
+
+/* screen < 880px */
+@media (max-width: 55em) {
+  .skills {
+    min-height: 35rem;
+  }
+
+  .skills__box {
+    height: 30rem;
+    padding-top: 2rem;
+  }
+
+  .skills__box h1 {
+    font-size: 3.8rem;
+  }
+
+  .skills_logo_box {
+    margin-top: 0;
+    font-size: 1.8rem;
+    gap: 2rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 3rem;
+  }
+}
+
+/* screen < 710px */
+@media (max-width: 44.38em) {
+  .skills {
+    min-height: 30rem;
+  }
+
+  .skills__box {
+    height: 20rem;
+    padding-top: 2rem;
+  }
+
+  .skills__box h1 {
+    font-size: 2.8rem;
+  }
+
+  .skills_logo_box {
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+
+  .skills_logo_box li {
+    margin: 0;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 2.5rem;
+  }
+}
+
+/* screen < 540px */
+@media (max-width: 35em) {
+  .skills {
+    min-height: 25rem;
+  }
+
+  .skills__box {
+    height: 15rem;
+    width: 75%;
+    padding-top: 2rem;
+    top: -5rem;
+  }
+
+  .skills__box h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills_logo_box {
+    font-size: 1.2rem;
+    gap: 0;
+  }
+
+  .skills_logo_box li {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 2rem;
+  }
+}
+
+/* screen < 420px */
+@media (max-width: 26.25em) {
+  .skills {
+    min-height: 20rem;
+  }
+  .skills__box {
+    height: 12rem;
+    width: 80%;
+    padding-top: 1rem;
+  }
+
+  .skills__box h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills_logo_box {
+    font-size: 1rem;
+    gap: 0;
+  }
+
+  .skills_logo_box li {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
   }
 }
