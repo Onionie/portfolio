@@ -174,6 +174,22 @@ input.send {
   }
 
   .form__container h1 {
+    font-size: 6.2rem;
+  }
+
+  .form__container input,
+  .form__container textarea {
+    font-size: 3.4rem;
+  }
+
+  .form__container textarea {
+    height: 40rem;
+  }
+}
+
+/* screen > 2000px */
+@media (min-width: 187.5em) {
+  .form__container h1 {
     font-size: 7.6rem;
   }
 
