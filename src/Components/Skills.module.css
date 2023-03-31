@@ -84,3 +84,49 @@
 .mongo svg {
   color: #4db33d;
 }
+
+/****************
+* Media Queries *
+*****************/
+
+/* screen > 2000px */
+@media (min-width: 125em) {
+  .skills {
+    min-height: 55rem;
+  }
+  .skills__box {
+    height: 45rem;
+  }
+  .skills__box h1 {
+    font-size: 6.8rem;
+  }
+
+  .skills_logo_box {
+    font-size: 3.8rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 5.5rem;
+  }
+}
+
+/* screen > 3000px */
+@media (min-width: 187.5em) {
+  .skills {
+    min-height: 65rem;
+  }
+  .skills__box {
+    height: 50rem;
+  }
+  .skills__box h1 {
+    font-size: 7.6rem;
+  }
+
+  .skills_logo_box {
+    font-size: 4.8rem;
+  }
+
+  .skills_logo_box li svg {
+    font-size: 6.5rem;
+  }
+}
