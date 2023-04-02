@@ -29,7 +29,7 @@ const Hero = () => {
         <div data-aos="fade-right" data-aos-delay="2100">
           <a
             className="btn btn__full"
-            href="https://drive.google.com/file/d/1VmbQ67KnbyMJx9_7zMzrJFzy360DHM9j/view"
+            href="https://drive.google.com/file/d/1LxytGstwINjYYcxQ3yLlVtOtggomK0GC/"
             target="_blank"
             rel="noreferrer"
           >
