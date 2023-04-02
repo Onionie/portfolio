@@ -1,6 +1,4 @@
 .container {
-  min-height: 400px;
-  width: 100%;
   border-radius: 1.6rem;
   overflow: hidden;
   box-shadow: 0 0 4px rgba(255, 86, 11, 0.8);
@@ -28,7 +26,7 @@
 }
 
 .container__body p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -87,4 +85,131 @@
 .btn__outline:active {
   background-color: #b3a745;
   border-color: #b3a745;
+}
+
+/****************
+* Media Queries *
+*****************/
+
+/* screen > 2100px */
+@media (min-width: 131.25em) {
+  .container__body__title {
+    font-size: 5.2rem;
+  }
+
+  .container__body p {
+    font-size: 2.4rem;
+  }
+}
+
+/* screen > 2420px */
+@media (min-width: 151.25em) {
+  .container__body__title {
+    font-size: 6.2rem;
+  }
+
+  .tools {
+    font-size: 3.6rem;
+  }
+
+  .container__body p {
+    font-size: 3rem;
+  }
+
+  .btn:link {
+    font-size: 3.2rem;
+  }
+}
+
+/* screen > 3200px */
+@media (min-width: 200em) {
+  .container__body p {
+    font-size: 3.8rem;
+  }
+
+  .btn:link {
+    font-size: 4.2rem;
+  }
+}
+
+/* screen <1760px */
+@media (max-width: 110em) {
+  .container__body__title {
+    font-size: 3.6rem;
+  }
+
+  .tools {
+    font-size: 2.2rem;
+  }
+
+  .container__body p,
+  .btn:link {
+    font-size: 1.8rem;
+  }
+}
+
+/* screen <1620px */
+@media (max-width: 101.25em) {
+  .container {
+    grid-template-columns: 6fr 4fr;
+  }
+
+  .container__body__title {
+    font-size: 3.2rem;
+  }
+
+  .tools {
+    font-size: 2rem;
+  }
+
+  .container__body p,
+  .btn:link {
+    border-radius: 4px;
+    font-size: 1.6rem;
+  }
+}
+
+/* screen < 1500px */
+@media (max-width: 93.75em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* screen < 660px */
+@media (max-width: 41.25em) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container__body__title {
+    font-size: 2.6rem;
+  }
+
+  .tools {
+    font-size: 1.6rem;
+  }
+
+  .container__body p {
+    font-size: 1.2rem;
+  }
+
+  .btn:link {
+    font-size: 1.4rem;
+  }
+
+  .btn:link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* screen < 500px */
+@media (max-width: 31.25em) {
+  .container__body__title {
+    font-size: 2.2rem;
+  }
+
+  .tools {
+    font-size: 1.4rem;
+  }
 }
