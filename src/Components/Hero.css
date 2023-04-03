@@ -2,15 +2,14 @@
   height: 110vh;
   width: 100%;
   background-image: url('../Assets/images/blood-moon.jpg');
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero__textbox {
   position: relative;
-  top: 30%;
-  width: 40%;
+  top: 20%;
   margin-left: 10rem;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .hero__textbox__body {
+  width: 40%;
   margin-top: 2rem;
   margin-bottom: 6rem;
   font-size: 2.4rem;
@@ -98,6 +98,10 @@
 
 /* screen < 1600px */
 @media (max-width: 100em) {
+  .hero__section {
+    background-position: center;
+  }
+
   .hero__textbox__title {
     font-size: 5.6rem;
   }
@@ -105,6 +109,118 @@
   .hero__textbox__body,
   .btn:link {
     font-size: 2.2rem;
+  }
+}
+
+/* screen < 1320px */
+@media (max-width: 82.5em) {
+  .hero__section {
+    height: 105vh;
+    background-position: center left;
+  }
+
+  .hero__textbox {
+    top: 25%;
+    margin-left: 5rem;
+  }
+
+  .hero__textbox__title {
+    font-size: 4.6rem;
+  }
+
+  .hero__textbox__body {
+    width: 45%;
+  }
+
+  .hero__textbox__body,
+  .btn:link {
+    font-size: 2rem;
+  }
+
+  .btn:link {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* screen < 960px */
+@media (max-width: 60em) {
+  .hero__section {
+    height: 95vh;
+    background-position: center left 35%;
+  }
+
+  .hero__textbox__body {
+    width: 50%;
+  }
+
+  .hero__textbox__title {
+    font-size: 3.8rem;
+  }
+
+  .hero__textbox__body,
+  .btn:link {
+    font-size: 1.6rem;
+  }
+}
+
+/* screen < 800px */
+@media (max-width: 50em) {
+  .hero__textbox__title {
+    font-size: 3.2rem;
+  }
+
+  .hero__textbox__body,
+  .btn:link {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* screen < 640px */
+@media (max-width: 40em) {
+  .hero__section {
+    background-position: center left 35%;
+  }
+
+  .hero__textbox__body {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .hero__textbox__title {
+    font-size: 2.6rem;
+  }
+
+  .btn:link {
+    margin-bottom: 0;
+  }
+
+  .btn__full {
+    margin-right: 1rem;
+  }
+}
+
+/* screen < 440px */
+@media (max-width: 27.5em) {
+  .hero__textbox__body {
+    width: 65%;
+  }
+
+  .hero__textbox__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__textbox__body,
+  .btn:link {
+    font-size: 1.2rem;
+  }
+  .btn:link {
+    margin-bottom: 0;
+    padding: 1rem 1.5rem;
+  }
+
+  .btn__full {
+    margin-right: 1rem;
   }
 }
 

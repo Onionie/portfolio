@@ -23,6 +23,7 @@ const Hero = () => {
           I'm a Software Developer with a passion to learn and create. I am
           fascinated with building things that live on the internet.
           <br />
+          <br />
           Although I love front-end development, I also like to work with
           back-end technologies such as Node.Js, Express.js and MongoDB.
         </p>
