@@ -98,10 +98,6 @@
 
 /* screen < 1600px */
 @media (max-width: 100em) {
-  .hero__section {
-    background-position: center;
-  }
-
   .hero__textbox__title {
     font-size: 5.6rem;
   }
@@ -116,7 +112,7 @@
 @media (max-width: 82.5em) {
   .hero__section {
     height: 105vh;
-    background-position: center left;
+    background-position: center left 30%;
   }
 
   .hero__textbox {
