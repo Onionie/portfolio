@@ -4,7 +4,7 @@ Check out my deployed Portfolio 😊
 
 # Deployment
 
-https://onionie.github.io/Portfolio/
+https://onionie.github.io/portfolio/
 
 # Tools Used
 
