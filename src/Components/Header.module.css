@@ -10,7 +10,7 @@
 
 html {
   font-size: 62.5%;
-
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -21,12 +21,14 @@ body {
 }
 
 header {
-  position: absolute;
+  position: relative;
   width: 100%;
-  padding: 5rem 4rem 0;
 }
 
 nav {
+  position: absolute;
+  width: inherit;
+  padding: 5rem 4rem 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -76,9 +78,12 @@ nav a:hover,
   top: 3rem;
   right: 3rem;
   font-size: 4rem;
+  opacity: 0;
   cursor: pointer;
+  pointer-events: none;
+  visibility: hidden;
+
   transition: all 0.4s;
-  opacity: 1;
 }
 
 /**************** 
@@ -125,86 +130,49 @@ nav a:hover,
   }
 }
 
-/* screen < 1600px */
-@media (max-width: 100em) {
-  nav ul {
-    gap: 3rem;
-    font-size: 2.2rem;
-  }
-
-  li a svg {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-  }
-}
-
 /* screen < 1312px */
 @media (max-width: 82em) {
   nav ul {
     gap: 2rem;
-    font-size: 2.2rem;
-  }
-
-  li a svg {
-    display: block;
-    width: 3rem;
-    height: 3rem;
   }
 }
 
+/* Mobile Navigation */
 /* screen < 960px */
 @media (max-width: 60em) {
-  /* CLOSE */
-  /* opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  */
-  /* OPEN */
-  /* opacity: 0;
-    pointer-events: auto;
-    visibility: visible;
-  */
-  header {
-    /* position: fixed; */
-    z-index: 100;
+  nav {
     padding: 0;
-    height: 100%;
-    transform: translateX(100%);
-    transition: all 0.4s;
-  }
-
-  header.mobile__nav {
-    transform: translateX(0%);
-    transition: all 0.4s;
   }
 
   nav ul {
-    background-color: rgba(36, 39, 42, 0.8);
+    background-color: rgba(36, 39, 42, 0.9);
     height: 100vh;
-    width: 45%;
-
-    padding: 10rem 5rem;
+    width: 100%;
+    z-index: 100;
+    padding-top: 10rem;
 
     flex-direction: column;
     gap: 3rem;
     align-items: center;
     font-size: 2.6rem;
+
+    /* Hide and disable */
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.4s;
+  }
+
+  .mobile__nav nav ul {
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .btn__mobile svg {
-    left: -8%;
-  }
-
-  .close__btn__show {
+    z-index: 101;
     opacity: 1;
-  }
-
-  .close__btn__hide {
-    opacity: 0;
-  }
-
-  .btn__mobile__on {
-    display: block;
+    pointer-events: auto;
+    visibility: visible;
   }
 }

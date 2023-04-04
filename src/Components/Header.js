@@ -4,47 +4,50 @@ import { IoMenu, IoClose } from 'react-icons/io5';
 import styles from './Header.module.css';
 
 const Nav = () => {
-  const [hamburger, setHamburger] = useState(false);
+  const [hamburger, setHamburger] = useState(true);
 
   const hamburgerHandler = () => {
     setHamburger(!hamburger);
   };
 
+  const scrollToHandler = () => {
+    setHamburger(true);
+  };
+
   return (
-    <header className={hamburger ? styles.mobile__nav : ''}>
+    <header className={hamburger ? '' : styles.mobile__nav}>
       <nav>
         <ul>
-          <li>
+          <li onClick={scrollToHandler}>
             <a href="#skills">Skills</a>
           </li>
-          <li>
+          <li onClick={scrollToHandler}>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={scrollToHandler}>
             <a href="https://github.com/Onionie">
               <BsGithub />
             </a>
           </li>
-          <li>
+          <li onClick={scrollToHandler}>
             <a href="https://www.linkedin.com/in/onionie/">
               <BsLinkedin />
             </a>
           </li>
-          <li>
+          <li onClick={scrollToHandler}>
             <a className={styles.contact} href="#contact">
               Contact Me
             </a>
           </li>
         </ul>
-        <div className={styles.btn__mobile}>
-          <IoMenu onClick={hamburgerHandler} />
-          <IoClose
-            className={
-              hamburger ? styles.close__btn__hide : styles.close__btn__show
-            }
-          />
-        </div>
       </nav>
+      <div className={styles.btn__mobile}>
+        {hamburger ? (
+          <IoMenu onClick={hamburgerHandler} />
+        ) : (
+          <IoClose onClick={hamburgerHandler} />
+        )}
+      </div>
     </header>
   );
 };
