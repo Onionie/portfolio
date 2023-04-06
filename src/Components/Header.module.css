@@ -10,13 +10,17 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #eee;
+}
+
+html,
+body {
+  width: 100%;
   overflow-x: hidden;
 }
 
