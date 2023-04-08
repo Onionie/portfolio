@@ -6,7 +6,7 @@
     rgba(204, 68, 34, 1) 12%,
     rgba(0, 0, 0, 1) 35%
   );
-  min-height: 50rem;
+  padding: 10rem 0;
 }
 
 .skills__box {
@@ -16,10 +16,7 @@
   padding: 5rem 10rem;
   height: 400px;
   width: 60%;
-
   border-radius: 2rem;
-  position: relative;
-  top: -5rem;
 }
 
 .skills__box h1 {
@@ -157,6 +154,7 @@
 @media (max-width: 60em) {
   .skills {
     min-height: 45rem;
+    padding: 8rem 0;
   }
 
   .skills__box {
@@ -194,6 +192,7 @@
 @media (max-width: 44.38em) {
   .skills {
     min-height: 30rem;
+    padding: 6rem 0;
   }
 
   .skills__box {
@@ -254,6 +253,7 @@
 @media (max-width: 26.25em) {
   .skills {
     min-height: 20rem;
+    padding: 5rem 0;
   }
   .skills__box {
     height: 12rem;
