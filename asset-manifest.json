@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.becfdef5.css",
-    "main.js": "/portfolio/static/js/main.66aad88a.js",
+    "main.js": "/portfolio/static/js/main.c40ae702.js",
     "static/media/2.jpg": "/portfolio/static/media/2.7d301ebabdb5d374493d.jpg",
     "static/media/1.jpg": "/portfolio/static/media/1.b15b3d71d466d4a7eac1.jpg",
     "static/media/3.jpg": "/portfolio/static/media/3.ab1dd3397b959ac3a8bc.jpg",
@@ -9,10 +9,10 @@
     "static/media/blood-moon.jpg": "/portfolio/static/media/blood-moon.48f6e75ffcc92adc943c.jpg",
     "index.html": "/portfolio/index.html",
     "main.becfdef5.css.map": "/portfolio/static/css/main.becfdef5.css.map",
-    "main.66aad88a.js.map": "/portfolio/static/js/main.66aad88a.js.map"
+    "main.c40ae702.js.map": "/portfolio/static/js/main.c40ae702.js.map"
   },
   "entrypoints": [
     "static/css/main.becfdef5.css",
-    "static/js/main.66aad88a.js"
+    "static/js/main.c40ae702.js"
   ]
 }
