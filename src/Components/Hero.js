@@ -30,7 +30,7 @@ const Hero = () => {
         <div data-aos="fade-right" data-aos-delay="2100">
           <a
             className={`${styles.btn} ${styles.btn__full}`}
-            href="https://drive.google.com/file/d/1LxytGstwINjYYcxQ3yLlVtOtggomK0GC/"
+            href="https://drive.google.com/file/d/1JnHfsrZdXET_4Rj3f9bHRLKqiweOkRLU/view"
             target="_blank"
             rel="noreferrer"
           >
